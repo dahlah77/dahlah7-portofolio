@@ -1,0 +1,1 @@
+[Translate test](https://translate.google.com/m?sl=en&tl=id&q=Finance%20is%20important.)
