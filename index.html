@@ -1,115 +1,257 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<meta name="theme-color" content="#080808">
-<meta name="description" content="DAHLAH7 — personal portfolio of Muhammad Romi Hidayat. AI, web development, automation, architecture and 3D visualization.">
-<meta property="og:title" content="DAHLAH7 — Muhammad Romi Hidayat">
-<meta property="og:description" content="AI · Development · Architecture. Selected work and experiments by Muhammad Romi Hidayat.">
-<title>DAHLAH7 — Muhammad Romi Hidayat</title>
-<style>
-:root{--b:#080808;--b2:#101011;--p:#efede7;--t:#111114;--r:#ff3428;--o:#ff6d26;--m:#96928b;--l:#ffffff1f;--dl:#1112;--x:clamp(22px,5vw,76px);--max:1540px}
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--b);color:#f5f2ee;font-family:Arial,Helvetica,sans-serif;overflow-x:hidden}body.lock{overflow:hidden}a{color:inherit;text-decoration:none}button{font:inherit}.wrap{width:min(var(--max),100%);margin:auto;padding:0 var(--x)}.noise{position:fixed;inset:0;z-index:100;pointer-events:none;opacity:.035;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 160 160' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence baseFrequency='.8' numOctaves='3'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}.nav{position:fixed;z-index:90;top:0;left:0;right:0;height:82px;padding:0 var(--x);display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid transparent;transition:.25s}.nav.sc{background:#080808d9;backdrop-filter:blur(18px);border-color:var(--l)}.brand{display:flex;align-items:center;gap:12px}.mark{height:39px;width:39px;display:grid;place-items:center;border:1px solid #fff;font-size:12px;font-weight:800}.brand span:last-child{display:grid;gap:2px}.brand b{font-size:10px;letter-spacing:.18em}.brand small{font-size:8px;letter-spacing:.12em;color:#888}.navlinks{display:flex;gap:31px}.navlinks a{font-size:9px;letter-spacing:.18em;text-transform:uppercase;color:#aaa}.navlinks a:hover{color:#fff}.cta{border:1px solid #4a4a4d;padding:11px 14px;font-size:9px;letter-spacing:.14em;text-transform:uppercase}.menu{display:none;background:none;border:0;color:#fff;font-size:10px;letter-spacing:.15em;text-transform:uppercase}.mobile{position:fixed;z-index:85;left:0;right:0;top:73px;background:#0a0a0a;padding:25px var(--x);display:grid;gap:18px;transform:translateY(-140%);transition:.3s;border-bottom:1px solid var(--l)}.mobile.open{transform:none}.mobile a{font-size:25px;text-transform:uppercase}.dark{background:var(--b);color:#f5f2ee}.light{background:var(--p);color:var(--t)}.no{position:absolute;left:var(--x);top:35px;color:var(--r);font-size:9px;letter-spacing:.18em}.ey{font-size:9px;letter-spacing:.2em;text-transform:uppercase}.display{font-size:clamp(54px,7.6vw,124px);line-height:.84;letter-spacing:-.07em;text-transform:uppercase;margin:0;font-weight:900}.display em{font-family:Georgia,serif;font-weight:400;text-transform:none}.reveal{opacity:0;transform:translateY(30px);transition:opacity .8s,transform .9s cubic-bezier(.16,.72,.2,1)}.reveal.in{opacity:1;transform:none}
-.hero{position:relative;min-height:100svh;height:max(760px,100svh);overflow:hidden;padding:135px var(--x) 48px;background:#080808}.grid{position:absolute;inset:0;background-image:linear-gradient(#ffffff09 1px,transparent 1px),linear-gradient(90deg,#ffffff09 1px,transparent 1px);background-size:78px 78px;mask-image:linear-gradient(#000,transparent 87%)}.aura{position:absolute;border-radius:50%;filter:blur(80px);pointer-events:none}.a1{width:650px;height:650px;background:#ff30271f;right:-90px;top:-170px}.a2{width:500px;height:500px;background:#ff7b2411;left:25%;bottom:-270px}.hero:after{content:"";position:absolute;left:0;right:0;bottom:0;height:35%;background:linear-gradient(transparent,#080808)}.hero-copy{position:relative;z-index:4;width:min(850px,64vw);padding-top:7vh}.kicker{font-size:9px;letter-spacing:.21em;color:#aaa}.kicker:before{content:"";display:inline-block;width:6px;height:6px;border-radius:50%;background:var(--r);box-shadow:0 0 18px var(--r);margin-right:10px}.hero h1{margin:24px 0 22px;font-size:clamp(95px,14.2vw,240px);line-height:.7;letter-spacing:-.105em}.hero h1 em{font-style:normal;color:var(--r);font-family:Georgia,serif;font-weight:400}.roles{display:flex;gap:12px;align-items:center;flex-wrap:wrap;padding-top:14px;border-top:1px solid var(--l);font-size:9px;letter-spacing:.18em;color:#c9c7c3}.roles i{font-style:normal;color:#555}.lead{font-family:Georgia,serif;font-size:clamp(18px,1.75vw,27px);line-height:1.45;color:#b7b3ad;max-width:700px;margin:32px 0}.actions{display:flex;gap:10px;flex-wrap:wrap}.btn{display:inline-flex;gap:20px;align-items:center;padding:14px 17px;border:1px solid #4a4a4d;font-size:9px;letter-spacing:.14em;text-transform:uppercase}.primary{background:#f5f2ee;color:#111;border-color:#f5f2ee}.portrait{position:absolute;z-index:3;right:clamp(12px,4vw,70px);top:50%;transform:translateY(-44%);width:min(31vw,460px);margin:0}.photo{position:relative;aspect-ratio:3/4;overflow:hidden;border:1px solid #ffffff2b;background:#260d0d;clip-path:polygon(8% 0,100% 0,100% 92%,92% 100%,0 100%,0 8%)}.photo img{width:100%;height:100%;object-fit:cover;filter:saturate(.86) contrast(1.07) brightness(.84)}.photo:after{content:"";position:absolute;inset:0;background:linear-gradient(150deg,#ff35282a,transparent 40%),radial-gradient(circle at 60% 25%,transparent 0 25%,#0008 88%);box-shadow:inset 0 0 90px #0007}.portrait figcaption{display:flex;justify-content:space-between;gap:15px;margin-top:10px;font-size:7px;letter-spacing:.12em;color:#777}.scroll{position:absolute;z-index:5;bottom:33px;left:var(--x);font-size:8px;letter-spacing:.15em;color:#777}.index{position:absolute;z-index:5;bottom:34px;right:var(--x);display:flex;gap:10px;align-items:center;font-size:8px;color:#777}.index i{display:block;width:60px;height:1px;background:#444}
-.intro{position:relative;padding:145px 0 110px;overflow:hidden}.introgrid{display:grid;grid-template-columns:.33fr 1.2fr .7fr;gap:5vw}.intro .ey{color:#777}.introcopy{padding-top:9vh}.introcopy p{font-family:Georgia,serif;font-size:18px;line-height:1.65;color:#444}.textlink{display:inline-flex;gap:28px;border-bottom:1px solid #222;padding-bottom:6px;margin-top:18px;font-size:9px;letter-spacing:.14em;text-transform:uppercase}.marquee{margin-top:90px;border-top:1px solid #1112;border-bottom:1px solid #1112;white-space:nowrap;overflow:hidden;padding:17px 0}.marquee div{font-size:10px;letter-spacing:.2em;animation:move 28s linear infinite}@keyframes move{to{transform:translateX(-50%)}}
-.work{position:relative;padding:145px 0}.head{display:grid;grid-template-columns:1fr .43fr;gap:8vw}.head .ey{grid-column:1/-1;color:#777}.head>p:last-child{font-family:Georgia,serif;font-size:18px;line-height:1.55;color:#96928b;align-self:end}.filters{display:flex;gap:8px;flex-wrap:wrap;margin:65px 0 30px}.filter{background:none;border:1px solid #37373a;color:#8f8f92;padding:9px 13px;font-size:8px;letter-spacing:.14em;text-transform:uppercase;cursor:pointer}.filter.on,.filter:hover{background:#f5f2ee;border-color:#f5f2ee;color:#111}.projects{display:grid;grid-template-columns:1.2fr .8fr;gap:65px 22px}.card{transition:.3s}.card.hide{display:none}.large{grid-row:span 2}.wide{grid-column:1/-1}.visual{position:relative;overflow:hidden;background:#151516;aspect-ratio:4/3;border:1px solid #202024;transition:.5s}.large .visual{aspect-ratio:4/5}.wide .visual{aspect-ratio:16/7}.card:hover .visual{transform:translateY(-5px);filter:brightness(1.08)}.badge{position:absolute;z-index:5;left:16px;top:16px;border:1px solid #ffffff44;background:#09090988;padding:7px 9px;font-size:7px;letter-spacing:.16em}.meta{display:flex;justify-content:space-between;border-top:1px solid var(--l);padding-top:12px;margin-top:14px;font-size:7px;letter-spacing:.14em;color:#777}.card h3{font-size:clamp(28px,3vw,46px);letter-spacing:-.05em;margin:10px 0 8px}.card p{font-family:Georgia,serif;color:#96928b;font-size:16px;line-height:1.55;max-width:760px}.open{background:none;color:#ddd;border:0;border-bottom:1px solid #555;padding:0 0 6px;margin-top:9px;font-size:8px;letter-spacing:.14em;text-transform:uppercase;cursor:pointer}.arch{background:linear-gradient(#5d5859 0 30%,#8d412d 31% 52%,#161717 53%)}.arch:before{content:"";position:absolute;left:9%;right:7%;height:14%;top:43%;background:#121212;transform:skewX(-8deg);box-shadow:0 130px 0 80px #50433b}.arch:after{content:"";position:absolute;left:19%;right:22%;top:58%;height:28%;background:linear-gradient(90deg,#181d20,#4e4239);box-shadow:inset 0 0 45px #ff704036}.pool{position:absolute;left:4%;right:5%;bottom:5%;height:14%;background:linear-gradient(90deg,#224647,#3f7a7a);clip-path:polygon(5% 0,100% 0,93% 100%,0 100%)}.sun{position:absolute;right:8%;top:6%;width:36%;aspect-ratio:1;border-radius:50%;background:radial-gradient(circle,#f89a5d 0 12%,#bc422d 35%,transparent 68%)}.ai{background:radial-gradient(circle at 50% 45%,#5a1715,#131315 28%,#070708 70%)}.core{position:absolute;left:50%;top:48%;transform:translate(-50%,-50%);width:95px;height:95px;border:1px solid #ff493c88;border-radius:50%;display:grid;place-items:center;font-size:28px;box-shadow:0 0 60px #ff34282e}.orbit{position:absolute;left:50%;top:48%;transform:translate(-50%,-50%);border:1px solid #ffffff20;border-radius:50%}.o1{width:56%;height:56%}.o2{width:78%;height:78%;transform:translate(-50%,-50%) rotate(25deg)}.browser{background:linear-gradient(135deg,#20191d,#09090a 66%)}.shell{position:absolute;inset:17% 11%;border:1px solid #ffffff29;border-radius:12px;background:#111114;box-shadow:0 35px 70px #0008;overflow:hidden}.shell:before{content:"● ● ●";display:block;height:14%;padding:12px 15px;border-bottom:1px solid #ffffff16;color:#5b5b60;font-size:8px;letter-spacing:5px}.shell:after{content:"AUTOMATE  01  →  02  →  03";position:absolute;left:8%;right:8%;top:30%;padding:18px;border:1px solid #ffffff13;color:#c7c3bf;font-size:13px;letter-spacing:.15em}.render{background:linear-gradient(#5f4a49 0 35%,#b26943 36% 51%,#24211e 52%)}.render:before{content:"";position:absolute;left:22%;right:18%;top:42%;height:27%;background:#1b1b18;clip-path:polygon(0 27%,19% 27%,24% 0,87% 0,100% 26%,100% 100%,0 100%);box-shadow:0 20px 50px #000}.render:after{content:"";position:absolute;left:39%;right:23%;top:55%;height:12%;background:linear-gradient(90deg,#191c1b,#4b382c);box-shadow:inset 0 0 40px #ff9c5a55}.docs{background:linear-gradient(150deg,#19191c,#080809)}.paper{position:absolute;width:40%;height:62%;left:30%;top:17%;border:1px solid #ffffff22;background:#141416;box-shadow:18px 20px 40px #0008;transform:rotate(5deg)}.paper:before{content:"DAHLAH7 / DOC QA";position:absolute;left:13%;top:14%;font-size:7px;letter-spacing:.14em;color:#aaa}.paper:after{content:"";position:absolute;left:13%;right:13%;top:28%;height:48%;background:repeating-linear-gradient(#68686b 0 1px,transparent 1px 18px);opacity:.25}.scan{position:absolute;left:20%;right:17%;top:50%;height:1px;background:var(--r);box-shadow:0 0 15px var(--r)}.quant{background:linear-gradient(155deg,#141417,#070708);color:#ff4d3d;background-image:linear-gradient(#ffffff0d 1px,transparent 1px),linear-gradient(90deg,#ffffff0d 1px,transparent 1px);background-size:42px 42px}.quant svg{position:absolute;inset:18% 6% 12%;width:88%;height:70%}
-.expertise{position:relative;padding:140px 0}.exhead{display:grid;grid-template-columns:.33fr 1fr}.explist{margin-top:75px;border-top:1px solid #1112}.exrow{display:grid;grid-template-columns:70px 1fr .75fr 30px;gap:25px;align-items:center;padding:27px 0;border-bottom:1px solid #1112}.exrow>span{color:var(--r);font-size:9px}.exrow h3{font-size:clamp(28px,3vw,48px);letter-spacing:-.05em;margin:0;transition:.25s}.exrow p{font-family:Georgia,serif;color:#56534e;line-height:1.55}.exrow i{font-style:normal}.exrow:hover h3{transform:translateX(8px)}
-.process{position:relative;padding:140px 0}.processgrid{display:grid;grid-template-columns:.8fr 1.1fr;gap:8vw}.ptitle{position:sticky;top:125px;align-self:start}.steps{display:grid;grid-template-columns:1fr 1fr;border-left:1px solid var(--l);border-top:1px solid var(--l)}.steps article{min-height:235px;padding:23px;border-right:1px solid var(--l);border-bottom:1px solid var(--l);display:flex;flex-direction:column}.steps span{color:var(--r);font-size:9px}.steps h3{font-size:30px;letter-spacing:-.04em;margin:auto 0 9px}.steps p{font-family:Georgia,serif;color:#8c8983;line-height:1.55;margin:0}
-.about{position:relative;padding:140px 0}.aboutgrid{display:grid;grid-template-columns:.68fr 1fr;gap:8vw;align-items:center}.aboutphoto{max-width:500px;position:relative}.aboutphoto:before{content:"";position:absolute;inset:-17px 20px 20px -17px;border:1px solid #bdb8af}.aboutphoto img{display:block;width:100%;aspect-ratio:3/4;object-fit:cover;position:relative;filter:grayscale(.28)}.aboutcopy>p:not(.ey){font-family:Georgia,serif;font-size:18px;line-height:1.62;color:#4d4a46}.facts{display:grid;grid-template-columns:1fr 1fr;margin-top:40px;border-top:1px solid #1112}.facts div{padding:17px 0;border-bottom:1px solid #1112}.facts div:nth-child(odd){border-right:1px solid #1112}.facts div:nth-child(even){padding-left:20px}.facts small{display:block;font-size:7px;letter-spacing:.14em;color:#777;margin-bottom:7px}.facts b{font-size:13px;font-weight:500}
-.contact{position:relative;padding:140px 0 28px;min-height:90vh;display:flex;align-items:flex-end}.contact .wrap{width:100%}.contact h2{font-size:clamp(72px,10.4vw,174px);line-height:.78;letter-spacing:-.085em;margin:24px 0 75px;text-transform:uppercase}.contact h2 em{font-family:Georgia,serif;text-transform:none;font-weight:400}.cbottom{display:grid;grid-template-columns:.65fr 1fr;gap:8vw;border-top:1px solid var(--l);padding-top:24px}.cbottom>p{font-family:Georgia,serif;color:#96928b;font-size:17px;line-height:1.6}.links a{display:grid;grid-template-columns:105px 1fr 25px;gap:12px;padding:14px 0;border-bottom:1px solid var(--l);align-items:center}.links span{font-size:7px;letter-spacing:.14em;color:#777;text-transform:uppercase}.links b{font-size:13px;font-weight:400}.links i{font-style:normal}.footer{display:flex;justify-content:space-between;gap:20px;border-top:1px solid var(--l);margin-top:78px;padding-top:17px;font-size:7px;letter-spacing:.13em;color:#777;text-transform:uppercase}
-.modal{position:fixed;z-index:130;inset:0;background:#070708f5;backdrop-filter:blur(18px);display:grid;place-items:center;padding:var(--x);opacity:0;visibility:hidden;transition:.25s}.modal.on{opacity:1;visibility:visible}.close{position:absolute;right:var(--x);top:24px;background:none;border:0;color:#fff;font-size:42px;cursor:pointer}.mi{width:min(1050px,100%)}.mi h2{font-size:clamp(56px,8vw,124px);line-height:.84;letter-spacing:-.07em;margin:18px 0 30px}.mi>p:last-of-type{font-family:Georgia,serif;font-size:21px;line-height:1.6;color:#aaa59c}.cols{display:grid;grid-template-columns:repeat(3,1fr);margin-top:55px;border-top:1px solid var(--l)}.cols div{padding:20px;border-right:1px solid var(--l)}.cols small{font-size:7px;letter-spacing:.14em;color:#777}.cols p{font-size:12px;line-height:1.5}
-@media(max-width:1050px){.navlinks{display:none}.menu{display:block}.cta{margin-left:auto;margin-right:18px}.hero-copy{width:67vw}.portrait{right:-5vw;width:38vw}.introgrid{grid-template-columns:.22fr 1fr}.introcopy{grid-column:2}.head{grid-template-columns:1fr}.head>p:last-child{max-width:620px}.exrow{grid-template-columns:55px 1fr}.exrow p{grid-column:2}.exrow i{display:none}.processgrid{grid-template-columns:1fr}.ptitle{position:static}.aboutgrid{grid-template-columns:.55fr 1fr}}
-@media(max-width:720px){.nav{height:73px}.brand small{display:none}.cta{display:none}.hero{height:auto;min-height:100svh;padding:108px 22px 35px}.hero-copy{width:100%;padding-top:0}.hero h1{font-size:27vw;margin:17px 0}.roles{gap:8px}.lead{max-width:92%;margin:22px 0}.portrait{position:relative;right:auto;top:auto;transform:none;width:min(74vw,340px);margin:40px 0 105px auto}.index{display:none}.scroll{left:22px}.intro,.work,.expertise,.process,.about{padding:112px 0}.no{left:22px}.introgrid{display:block}.introgrid>.ey{margin-bottom:35px}.introcopy{padding-top:42px}.projects{grid-template-columns:1fr;gap:52px}.large,.wide{grid-column:auto;grid-row:auto}.large .visual,.wide .visual,.visual{aspect-ratio:4/3}.exhead{display:block}.exhead .ey{margin-bottom:30px}.exrow{grid-template-columns:35px 1fr;gap:12px}.exrow p{grid-column:2}.steps{grid-template-columns:1fr}.steps article{min-height:185px}.aboutgrid{grid-template-columns:1fr}.aboutphoto{width:75%;margin-bottom:42px}.facts{grid-template-columns:1fr}.facts div:nth-child(odd){border-right:0}.facts div:nth-child(even){padding-left:0}.contact h2{font-size:18vw}.cbottom{grid-template-columns:1fr}.links a{grid-template-columns:80px 1fr 20px}.footer{flex-direction:column}.cols{grid-template-columns:1fr}.cols div{border-right:0;border-bottom:1px solid var(--l)}.mobile{top:73px}}
-@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.reveal,.visual,.exrow h3{transition:none}.marquee div{animation:none}}
-</style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#080808">
+  <meta name="description" content="DAHLAH7 — Muhammad Romi Hidayat. AI systems, web experiences, automation, architecture and 3D visualization.">
+  <meta property="og:title" content="DAHLAH7 — Muhammad Romi Hidayat">
+  <meta property="og:description" content="Personal portfolio across AI, web, automation, architecture and 3D visualization.">
+  <meta property="og:type" content="website">
+  <title>DAHLAH7 — Muhammad Romi Hidayat</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<div class="noise"></div>
-<header class="nav" id="nav">
-<a class="brand" href="#top"><span class="mark">D7</span><span><b>DAHLAH7</b><small>Personal Portfolio</small></span></a>
-<nav class="navlinks"><a href="#work">Work</a><a href="#about">About</a><a href="#expertise">Expertise</a><a href="#contact">Contact</a></nav>
-<a class="cta" href="#contact">Start a project ↗</a><button class="menu" id="menu">Menu</button>
-</header>
-<div class="mobile" id="mobile"><a href="#work">Work</a><a href="#about">About</a><a href="#expertise">Expertise</a><a href="#contact">Contact</a></div>
+  <div class="noise" aria-hidden="true"></div>
+  <div class="cursor-glow" id="cursorGlow" aria-hidden="true"></div>
+  <div class="page-progress" id="pageProgress" aria-hidden="true"></div>
 
-<main id="top">
-<section class="hero dark">
-<div class="grid"></div><div class="aura a1"></div><div class="aura a2"></div>
-<div class="hero-copy reveal">
-<p class="kicker">PERSONAL CREATIVE IDENTITY / 2026</p>
-<h1>DAHLAH<em>7</em></h1>
-<div class="roles"><span>AI ENGINEER</span><i>×</i><span>WEB DEVELOPER</span><i>×</i><span>ARCHITECTURAL DESIGNER</span></div>
-<p class="lead">I build intelligent systems, digital experiences, and architectural visions where technology and design meet.</p>
-<div class="actions"><a class="btn primary" href="#work">Explore my work ↓</a><a class="btn" href="mailto:hidayatromi358@gmail.com">Let's talk ↗</a></div>
-</div>
-<figure class="portrait reveal"><div class="photo"><img src="romi-hero.jpg" alt="Muhammad Romi Hidayat"></div><figcaption><span>MUHAMMAD ROMI HIDAYAT</span><span>INDONESIA / GMT+8</span></figcaption></figure>
-<a class="scroll" href="#intro">SCROLL TO DISCOVER ↓</a><div class="index"><span>01</span><i></i><span>06</span></div>
-</section>
+  <header class="topbar" id="topbar">
+    <a class="brand" href="#top" aria-label="DAHLAH7 home">
+      <span class="brand-mark">D7</span>
+      <span class="brand-copy"><b>DAHLAH7</b><small>Personal Portfolio</small></span>
+    </a>
+    <nav class="desktop-nav" aria-label="Primary navigation">
+      <a href="#work">Work</a>
+      <a href="#expertise">Expertise</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a class="nav-cta" href="#contact">Start a project <span>↗</span></a>
+    <button class="menu-btn" id="menuBtn" type="button" aria-controls="mobileMenu" aria-expanded="false">Menu</button>
+  </header>
 
-<section class="intro light" id="intro"><div class="no">01</div>
-<div class="wrap introgrid"><p class="ey reveal">WHO I AM</p><h2 class="display reveal">Not one discipline.<br><em>One connected system.</em></h2>
-<div class="introcopy reveal"><p>I'm Muhammad Romi Hidayat. My work sits across AI, software, automation, architecture and visual communication. I like turning complex workflows into systems that feel simple, precise and useful.</p><p>The portfolio is intentionally cross-disciplinary: code can shape a workflow, data can sharpen a decision, and spatial thinking can improve the way a digital product feels.</p><a class="textlink" href="#about">More about me ↘</a></div></div>
-<div class="marquee"><div>AI ENGINEERING · WEB DEVELOPMENT · AUTOMATION · ARCHITECTURE · 3D VISUALIZATION · RESEARCH · AI ENGINEERING · WEB DEVELOPMENT · AUTOMATION · ARCHITECTURE · 3D VISUALIZATION · RESEARCH ·</div></div>
-</section>
+  <nav class="mobile-menu" id="mobileMenu" aria-hidden="true">
+    <a href="#work"><span>01</span>Work</a>
+    <a href="#expertise"><span>02</span>Expertise</a>
+    <a href="#about"><span>03</span>About</a>
+    <a href="#contact"><span>04</span>Contact</a>
+  </nav>
 
-<section class="work dark" id="work"><div class="no">02</div>
-<div class="wrap head reveal"><p class="ey">SELECTED WORK</p><h2 class="display">Built to solve.<br><em>Designed to be remembered.</em></h2><p>Selected personal projects and ongoing experiments across digital systems, architecture and AI-assisted workflows.</p></div>
-<div class="wrap filters reveal"><button class="filter on" data-f="all">All</button><button class="filter" data-f="ai">AI</button><button class="filter" data-f="web">Web</button><button class="filter" data-f="architecture">Architecture</button><button class="filter" data-f="automation">Automation</button></div>
-<div class="wrap projects">
-<article class="card large reveal" data-c="web architecture"><div class="visual arch"><span class="badge">IMMERSIVE / WEBGL</span><i class="sun"></i><i class="pool"></i></div><div class="meta"><span>01 / WEB + ARCHITECTURE</span><span>2026</span></div><h3>DAHLAH7 Architecture</h3><p>Immersive architectural portfolio experiments combining cinematic scrolling, 3D interaction and spatial storytelling.</p><button class="open" data-p="architecture">View case study ↗</button></article>
-<article class="card reveal" data-c="ai automation"><div class="visual ai"><span class="badge">AI / SYSTEMS</span><i class="orbit o1"></i><i class="orbit o2"></i><div class="core">D7</div></div><div class="meta"><span>02 / AI + AUTOMATION</span><span>ONGOING</span></div><h3>DAHLAH7 AI System</h3><p>A personal AI ecosystem concept for notes, reminders, finance tracking, automation and cross-device workflows.</p><button class="open" data-p="ai">View case study ↗</button></article>
-<article class="card reveal" data-c="web automation"><div class="visual browser"><span class="badge">BROWSER TOOLING</span><div class="shell"></div></div><div class="meta"><span>03 / WEB + AUTOMATION</span><span>2026</span></div><h3>Browser Workflow Tools</h3><p>Extensions and utility workflows designed to reduce repetitive browser tasks and streamline digital work.</p><button class="open" data-p="extension">View case study ↗</button></article>
-<article class="card wide reveal" data-c="architecture"><div class="visual render"><span class="badge">3D / VISUALIZATION</span></div><div class="meta"><span>04 / ARCHITECTURE + 3D</span><span>STUDIES</span></div><h3>Architectural Visualization Studies</h3><p>Explorations in massing, materiality, lighting, exterior/interior composition and presentation for luxury residential concepts.</p><button class="open" data-p="render">View case study ↗</button></article>
-<article class="card reveal" data-c="ai automation"><div class="visual docs"><span class="badge">AI / DOCUMENTS</span><i class="paper"></i><i class="scan"></i></div><div class="meta"><span>05 / AI + AUTOMATION</span><span>2025–26</span></div><h3>Document Automation Workflow</h3><p>Structured workflows for academic document QA, formatting, citation handling and revision with minimal layout change.</p><button class="open" data-p="docs">View case study ↗</button></article>
-<article class="card reveal" data-c="ai web"><div class="visual quant"><span class="badge">RESEARCH / DATA</span><svg viewBox="0 0 500 250"><path d="M0 210 C60 190 80 120 135 145 S220 220 280 115 S370 80 500 30" fill="none" stroke="currentColor" stroke-width="4"/><path d="M0 235 C90 220 130 180 195 205 S300 170 360 150 S430 100 500 110" fill="none" stroke="currentColor" stroke-width="1.5" opacity=".4"/></svg></div><div class="meta"><span>06 / AI + RESEARCH</span><span>EXPERIMENT</span></div><h3>Quantitative Research Experiments</h3><p>Data-oriented experiments around financial analysis, market research and repeatable analytical workflows.</p><button class="open" data-p="quant">View case study ↗</button></article>
-</div></section>
+  <main id="top">
+    <section class="hero section-dark" aria-labelledby="heroTitle">
+      <div class="hero-grid" aria-hidden="true"></div>
+      <div class="hero-aura aura-a" aria-hidden="true"></div>
+      <div class="hero-aura aura-b" aria-hidden="true"></div>
 
-<section class="expertise light" id="expertise"><div class="no">03</div>
-<div class="wrap exhead reveal"><p class="ey">EXPERTISE</p><h2 class="display">Different tools.<br><em>One way of thinking.</em></h2></div>
-<div class="wrap explist">
-<article class="exrow reveal"><span>01</span><h3>AI Engineering & Automation</h3><p>Agentic workflows, prompt systems, structured automation, AI-assisted research and utility tooling.</p><i>↗</i></article>
-<article class="exrow reveal"><span>02</span><h3>Web Development</h3><p>Responsive interfaces, interactive portfolios, JavaScript experiences, integrations and deployment workflows.</p><i>↗</i></article>
-<article class="exrow reveal"><span>03</span><h3>Architecture & 3D</h3><p>Spatial programming, zoning, modeling, visualization, material studies, rendering and architectural presentation.</p><i>↗</i></article>
-<article class="exrow reveal"><span>04</span><h3>Research & Data</h3><p>Structured research, financial analysis, documentation, data interpretation and reproducible workflows.</p><i>↗</i></article>
-</div></section>
+      <div class="hero-copy reveal">
+        <p class="kicker"><span class="live-dot"></span> PERSONAL CREATIVE IDENTITY / 2026</p>
+        <h1 id="heroTitle"><span>DAHLAH</span><em>7</em></h1>
+        <div class="roles" aria-label="Fields">
+          <span>AI SYSTEMS</span><i>×</i><span>WEB DEVELOPMENT</span><i>×</i><span>ARCHITECTURE</span>
+        </div>
+        <p class="hero-lead">I build intelligent systems, digital experiences, and architectural visions where technology and design meet.</p>
+        <div class="hero-actions">
+          <a class="button button-light magnetic" href="#work">Explore my work <span>↓</span></a>
+          <a class="button button-dark magnetic" href="mailto:hidayatromi358@gmail.com">Let's talk <span>↗</span></a>
+        </div>
+      </div>
 
-<section class="process dark"><div class="no">04</div><div class="wrap processgrid">
-<div class="ptitle reveal"><p class="ey">WORKFLOW</p><h2 class="display">From ambiguity<br><em>to something usable.</em></h2></div>
-<div class="steps"><article class="reveal"><span>01</span><h3>Understand</h3><p>Define the real problem, context, constraints and expected outcome.</p></article><article class="reveal"><span>02</span><h3>Research</h3><p>Collect references, data and technical requirements before making decisions.</p></article><article class="reveal"><span>03</span><h3>Design</h3><p>Translate requirements into structure, system, interface or spatial logic.</p></article><article class="reveal"><span>04</span><h3>Build</h3><p>Create the working artifact: code, model, workflow, document or visual system.</p></article><article class="reveal"><span>05</span><h3>Refine</h3><p>Test, simplify, optimize and remove friction until the result feels deliberate.</p></article><article class="reveal"><span>06</span><h3>Deliver</h3><p>Package the outcome so it can be used, reviewed, deployed or continued.</p></article></div>
-</div></section>
+      <figure class="hero-portrait reveal" id="heroPortrait">
+        <div class="portrait-shell">
+          <img src="romi-hero.jpg" alt="Portrait of Muhammad Romi Hidayat" width="1086" height="1448">
+          <div class="portrait-wash" aria-hidden="true"></div>
+          <span class="portrait-corner tl" aria-hidden="true"></span><span class="portrait-corner br" aria-hidden="true"></span>
+        </div>
+        <figcaption><span>MUHAMMAD ROMI HIDAYAT</span><span>INDONESIA / GMT+8</span></figcaption>
+      </figure>
 
-<section class="about light" id="about"><div class="no">05</div><div class="wrap aboutgrid">
-<div class="aboutphoto reveal"><img src="romi-hero.jpg" alt="Muhammad Romi Hidayat"></div>
-<div class="aboutcopy reveal"><p class="ey">ABOUT ROMI</p><h2 class="display">Curiosity became<br><em>a working method.</em></h2><p>I'm an active D3 Accounting student at Politeknik Negeri Tanah Laut with a multidisciplinary practice that has expanded into AI, web development, automation and architectural visualization.</p><p>My background also includes content management, document editing and a finance internship. That mix shaped how I work: technical enough to build, visual enough to communicate, and structured enough to keep complex projects under control.</p>
-<div class="facts"><div><small>BASED IN</small><b>Indonesia</b></div><div><small>EDUCATION</small><b>D3 Accounting</b></div><div><small>FOCUS</small><b>AI · Web · Architecture</b></div><div><small>HANDLE</small><b>@_dahlah7</b></div></div></div>
-</div></section>
+      <a class="scroll-cue" href="#intro">SCROLL TO DISCOVER <span>↓</span></a>
+      <div class="hero-index" aria-hidden="true"><span>01</span><i></i><span>06</span></div>
+    </section>
 
-<section class="contact dark" id="contact"><div class="no">06</div><div class="wrap">
-<p class="ey reveal">CONTACT</p><h2 class="reveal">Have an idea?<br><em>Let's make it real.</em></h2>
-<div class="cbottom reveal"><p>AI systems, web experiences, architecture, 3D visualization, automation or an unusual combination of them.</p><div class="links"><a href="mailto:hidayatromi358@gmail.com"><span>Email</span><b>hidayatromi358@gmail.com</b><i>↗</i></a><a href="https://instagram.com/_dahlah7" target="_blank" rel="noreferrer"><span>Instagram</span><b>@_dahlah7</b><i>↗</i></a><a href="https://github.com/dahlah77" target="_blank" rel="noreferrer"><span>GitHub</span><b>dahlah77</b><i>↗</i></a></div></div>
-<div class="footer"><span>© 2026 DAHLAH7 / MUHAMMAD ROMI HIDAYAT</span><span>dahlah7.com</span><a href="#top">Back to top ↑</a></div>
-</div></section>
-</main>
+    <section class="intro section-light" id="intro">
+      <div class="section-index">01</div>
+      <div class="wrap intro-grid">
+        <p class="eyebrow reveal">WHO I AM</p>
+        <h2 class="display reveal">Not one discipline.<br><em>One connected system.</em></h2>
+        <div class="intro-copy reveal">
+          <p>I'm Muhammad Romi Hidayat. My work moves between AI, software, automation, architecture and visual communication. The common thread is simple: turn complicated things into systems that feel clear and useful.</p>
+          <p>DAHLAH7 is the umbrella for that work — a personal creative identity for experiments, products, interfaces, spaces and workflows.</p>
+          <a class="text-link" href="#about">More about me <span>↘</span></a>
+        </div>
+      </div>
+      <div class="marquee" aria-hidden="true"><div>AI SYSTEMS · WEB DEVELOPMENT · AUTOMATION · ARCHITECTURE · 3D VISUALIZATION · RESEARCH · AI SYSTEMS · WEB DEVELOPMENT · AUTOMATION · ARCHITECTURE · 3D VISUALIZATION · RESEARCH ·</div></div>
+    </section>
 
-<div class="modal" id="modal"><button class="close" id="close">×</button><div class="mi"><p class="ey" id="cat">CASE STUDY</p><h2 id="title">Project</h2><p id="sum"></p><div class="cols"><div><small>FOCUS</small><p id="focus"></p></div><div><small>STATUS</small><p id="status"></p></div><div><small>ROLE</small><p>Concept · Design · Build</p></div></div></div></div>
-<script>
-const nav=document.getElementById("nav"),menu=document.getElementById("menu"),mobile=document.getElementById("mobile"),modal=document.getElementById("modal");
-addEventListener("scroll",()=>nav.classList.toggle("sc",scrollY>30),{passive:true});
-menu.onclick=()=>{mobile.classList.toggle("open");menu.textContent=mobile.classList.contains("open")?"Close":"Menu"};
-document.querySelectorAll(".mobile a").forEach(a=>a.onclick=()=>{mobile.classList.remove("open");menu.textContent="Menu"});
-const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add("in");io.unobserve(e.target)}}),{threshold:.12});
-document.querySelectorAll(".reveal").forEach(e=>io.observe(e));
-document.querySelectorAll(".filter").forEach(b=>b.onclick=()=>{document.querySelectorAll(".filter").forEach(x=>x.classList.remove("on"));b.classList.add("on");let f=b.dataset.f;document.querySelectorAll(".card").forEach(c=>c.classList.toggle("hide",f!=="all"&&!c.dataset.c.split(" ").includes(f)))});
-const data={
-architecture:["DAHLAH7 Architecture","Web + Architecture","Immersive architectural portfolio experiments combining cinematic scrolling, 3D interaction and spatial storytelling.","Interactive portfolio · 3D scene · responsive web","Active development"],
-ai:["DAHLAH7 AI System","AI + Automation","A personal AI ecosystem concept connecting notes, reminders, finance tracking, automation and cross-device workflows.","AI product system · automation · personal utilities","Concept / ongoing"],
-extension:["Browser Workflow Tools","Web + Automation","Browser utility and extension experiments focused on reducing repetitive tasks and making everyday workflows faster.","Browser extensions · JavaScript · workflow automation","Experiment / iteration"],
-render:["Architectural Visualization Studies","Architecture + 3D","Visual studies exploring luxury residential form, massing, materiality, lighting, interior/exterior composition and presentation.","3D modeling · visualization · spatial design","Study series"],
-docs:["Document Automation Workflow","AI + Documents","A structured workflow for academic document quality checks, layout-preserving revisions, citation handling and repeatable formatting.","Document QA · structured revision · automation","Working workflow"],
-quant:["Quantitative Research Experiments","Research + Data","Exploratory work around financial analysis, market research and repeatable quantitative workflows.","Data analysis · financial research · automation","Experimental"]
-};
-document.querySelectorAll(".open").forEach(b=>b.onclick=()=>{let d=data[b.dataset.p];document.getElementById("title").textContent=d[0];document.getElementById("cat").textContent=d[1];document.getElementById("sum").textContent=d[2];document.getElementById("focus").textContent=d[3];document.getElementById("status").textContent=d[4];modal.classList.add("on");document.body.classList.add("lock")});
-function shut(){modal.classList.remove("on");document.body.classList.remove("lock")}document.getElementById("close").onclick=shut;modal.onclick=e=>{if(e.target===modal)shut()};addEventListener("keydown",e=>{if(e.key==="Escape")shut()});
-</script>
-</body></html>
+    <section class="work section-dark" id="work">
+      <div class="section-index">02</div>
+      <div class="wrap work-heading reveal">
+        <p class="eyebrow">SELECTED WORK</p>
+        <h2 class="display">Built to solve.<br><em>Designed to be remembered.</em></h2>
+        <p class="section-intro">Selected work and ongoing experiments across digital systems, architecture, automation and AI-assisted workflows.</p>
+      </div>
+
+      <div class="wrap filters reveal" role="group" aria-label="Filter projects">
+        <button class="filter is-active" type="button" data-filter="all">All</button>
+        <button class="filter" type="button" data-filter="ai">AI</button>
+        <button class="filter" type="button" data-filter="web">Web</button>
+        <button class="filter" type="button" data-filter="architecture">Architecture</button>
+        <button class="filter" type="button" data-filter="automation">Automation</button>
+      </div>
+
+      <div class="wrap project-grid">
+        <article class="project-card project-card--hero reveal" data-category="web architecture">
+          <div class="project-visual visual-architecture">
+            <span class="visual-badge">IMMERSIVE / WEB</span>
+            <div class="arch-sun"></div><div class="arch-ridge"></div><div class="arch-roof"></div><div class="arch-wall"></div><div class="arch-glass"></div><div class="arch-pool"></div>
+          </div>
+          <div class="project-meta"><span>01 / WEB + ARCHITECTURE</span><span>2026</span></div>
+          <h3>DAHLAH7 Architecture</h3>
+          <p>Immersive architectural portfolio explorations combining cinematic scrolling, 3D interaction and spatial storytelling.</p>
+          <button class="project-open" type="button" data-project="architecture">View case study <span>↗</span></button>
+        </article>
+
+        <article class="project-card reveal" data-category="ai automation">
+          <div class="project-visual visual-ai">
+            <span class="visual-badge">AI / PERSONAL SYSTEM</span>
+            <div class="ai-grid"></div><div class="ai-orbit orbit-a"></div><div class="ai-orbit orbit-b"></div><div class="ai-core">D7</div>
+          </div>
+          <div class="project-meta"><span>02 / AI + AUTOMATION</span><span>ONGOING</span></div>
+          <h3>DAHLAH7 Personal OS</h3>
+          <p>A personal app concept connecting notes, reminders, finance tracking, goals, automation and cross-device workflows.</p>
+          <button class="project-open" type="button" data-project="ai">View case study <span>↗</span></button>
+        </article>
+
+        <article class="project-card reveal" data-category="web automation">
+          <div class="project-visual visual-browser">
+            <span class="visual-badge">BROWSER TOOLING</span>
+            <div class="browser-window"><div class="browser-top"><i></i><i></i><i></i></div><div class="browser-panel"><b>AUTOMATE</b><span>01</span><em>→</em><span>02</span><em>→</em><span>03</span></div><div class="browser-lines"></div></div>
+          </div>
+          <div class="project-meta"><span>03 / WEB + AUTOMATION</span><span>2026</span></div>
+          <h3>Browser Workflow Tools</h3>
+          <p>Extensions and utility workflows focused on reducing repetitive browser tasks and accelerating everyday work.</p>
+          <button class="project-open" type="button" data-project="browser">View case study <span>↗</span></button>
+        </article>
+
+        <article class="project-card project-card--wide reveal" data-category="architecture">
+          <div class="project-visual visual-render">
+            <span class="visual-badge">3D / VISUALIZATION</span>
+            <div class="render-sky"></div><div class="render-mass"></div><div class="render-window"></div><div class="render-water"></div><div class="render-light"></div>
+          </div>
+          <div class="project-meta"><span>04 / ARCHITECTURE + 3D</span><span>STUDIES</span></div>
+          <h3>Architectural Visualization Studies</h3>
+          <p>Explorations in massing, materiality, lighting, interior/exterior composition and presentation for luxury residential concepts.</p>
+          <button class="project-open" type="button" data-project="render">View case study <span>↗</span></button>
+        </article>
+
+        <article class="project-card reveal" data-category="ai automation">
+          <div class="project-visual visual-docs">
+            <span class="visual-badge">AI / DOCUMENTS</span>
+            <div class="doc-paper"><b>DAHLAH7 / DOC QA</b><div></div><div></div><div></div><div></div></div><div class="scan-line"></div>
+          </div>
+          <div class="project-meta"><span>05 / AI + AUTOMATION</span><span>2025–26</span></div>
+          <h3>Document Automation Workflow</h3>
+          <p>Structured workflows for document QA, formatting, citation handling and layout-preserving revision.</p>
+          <button class="project-open" type="button" data-project="docs">View case study <span>↗</span></button>
+        </article>
+
+        <article class="project-card reveal" data-category="ai web">
+          <div class="project-visual visual-data">
+            <span class="visual-badge">RESEARCH / DATA</span>
+            <div class="data-grid"></div>
+            <svg viewBox="0 0 600 320" aria-hidden="true"><path d="M0 265 C75 242 102 150 168 180 S267 270 344 128 S459 101 600 42"/><path class="thin" d="M0 298 C109 282 164 221 241 258 S360 217 437 189 S521 132 600 146"/></svg>
+          </div>
+          <div class="project-meta"><span>06 / AI + RESEARCH</span><span>EXPERIMENT</span></div>
+          <h3>Quantitative Research Experiments</h3>
+          <p>Data-oriented experiments around financial analysis, research workflows and repeatable analytical systems.</p>
+          <button class="project-open" type="button" data-project="data">View case study <span>↗</span></button>
+        </article>
+      </div>
+    </section>
+
+    <section class="expertise section-light" id="expertise">
+      <div class="section-index">03</div>
+      <div class="wrap expertise-heading reveal">
+        <p class="eyebrow">EXPERTISE</p>
+        <h2 class="display">Different tools.<br><em>One way of thinking.</em></h2>
+      </div>
+      <div class="wrap expertise-list">
+        <article class="expertise-row reveal"><span>01</span><h3>AI Systems & Automation</h3><p>Agentic workflows, prompt systems, structured automation, AI-assisted research and utility tooling.</p><i>↗</i></article>
+        <article class="expertise-row reveal"><span>02</span><h3>Web Development</h3><p>Responsive interfaces, interactive portfolios, JavaScript experiences, integrations and deployment workflows.</p><i>↗</i></article>
+        <article class="expertise-row reveal"><span>03</span><h3>Architecture & 3D</h3><p>Spatial programming, zoning, modeling, visualization, materials, lighting and architectural presentation.</p><i>↗</i></article>
+        <article class="expertise-row reveal"><span>04</span><h3>Research & Data</h3><p>Structured research, financial analysis, documentation, data interpretation and reproducible workflows.</p><i>↗</i></article>
+      </div>
+    </section>
+
+    <section class="process section-dark" id="process">
+      <div class="section-index">04</div>
+      <div class="wrap process-grid">
+        <div class="process-title reveal"><p class="eyebrow">WORKFLOW</p><h2 class="display">From ambiguity<br><em>to something usable.</em></h2></div>
+        <div class="steps">
+          <article class="reveal"><span>01</span><h3>Understand</h3><p>Define the actual problem, context, constraints and expected outcome.</p></article>
+          <article class="reveal"><span>02</span><h3>Research</h3><p>Collect references, data and technical requirements before making decisions.</p></article>
+          <article class="reveal"><span>03</span><h3>Design</h3><p>Translate requirements into structure, interface, workflow or spatial logic.</p></article>
+          <article class="reveal"><span>04</span><h3>Build</h3><p>Create the working artifact: code, model, workflow, document or visual system.</p></article>
+          <article class="reveal"><span>05</span><h3>Refine</h3><p>Test, simplify and optimize until the result feels deliberate and dependable.</p></article>
+          <article class="reveal"><span>06</span><h3>Deliver</h3><p>Package the outcome so it can be used, reviewed, deployed or continued.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="about section-light" id="about">
+      <div class="section-index">05</div>
+      <div class="wrap about-grid">
+        <figure class="about-photo reveal"><div class="about-photo-offset"></div><img src="romi-hero.jpg" alt="Muhammad Romi Hidayat" width="1086" height="1448"></figure>
+        <div class="about-copy reveal">
+          <p class="eyebrow">ABOUT ROMI</p>
+          <h2 class="display">Curiosity became<br><em>a working method.</em></h2>
+          <p>I'm an active D3 Accounting student at Politeknik Negeri Tanah Laut with a multidisciplinary practice that expanded into AI, web development, automation and architectural visualization.</p>
+          <p>My background also includes content management, document editing and a finance internship. That mix shaped how I work: structured enough to handle detail, technical enough to build, and visual enough to communicate ideas clearly.</p>
+          <div class="facts">
+            <div><small>BASED IN</small><b>Indonesia</b></div>
+            <div><small>EDUCATION</small><b>D3 Accounting</b></div>
+            <div><small>FOCUS</small><b>AI · Web · Architecture</b></div>
+            <div><small>HANDLE</small><b>@_dahlah7</b></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact section-dark" id="contact">
+      <div class="section-index">06</div>
+      <div class="wrap contact-inner">
+        <p class="eyebrow reveal">CONTACT</p>
+        <h2 class="contact-title reveal">Have an idea?<br><em>Let's make it real.</em></h2>
+        <div class="contact-grid reveal">
+          <p>AI systems, web experiences, architecture, 3D visualization, automation — or an unusual combination of them.</p>
+          <div class="contact-links">
+            <a href="mailto:hidayatromi358@gmail.com"><span>Email</span><b>hidayatromi358@gmail.com</b><i>↗</i></a>
+            <a href="https://instagram.com/_dahlah7" target="_blank" rel="noreferrer"><span>Instagram</span><b>@_dahlah7</b><i>↗</i></a>
+            <a href="https://github.com/dahlah77" target="_blank" rel="noreferrer"><span>GitHub</span><b>dahlah77</b><i>↗</i></a>
+          </div>
+        </div>
+        <footer class="footer"><span>© 2026 DAHLAH7 / MUHAMMAD ROMI HIDAYAT</span><span>dahlah7.com</span><a href="#top">Back to top ↑</a></footer>
+      </div>
+    </section>
+  </main>
+
+  <div class="case-modal" id="caseModal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="caseTitle">
+    <button class="modal-close" id="modalClose" type="button" aria-label="Close case study">×</button>
+    <div class="case-shell">
+      <p class="eyebrow" id="caseType">CASE STUDY</p>
+      <h2 id="caseTitle">Project</h2>
+      <p class="case-summary" id="caseSummary"></p>
+      <div class="case-columns">
+        <div><small>FOCUS</small><p id="caseFocus"></p></div>
+        <div><small>STATUS</small><p id="caseStatus"></p></div>
+        <div><small>ROLE</small><p>Concept · Design · Build</p></div>
+      </div>
+      <div class="case-note"><span>DAHLAH7 / SELECTED WORK</span><span>↘</span></div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
