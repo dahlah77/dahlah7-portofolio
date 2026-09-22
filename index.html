@@ -558,6 +558,24 @@ body.project-hover .cursor-dot{opacity:0}
 @media(max-width:720px){.hero-prism-stage{display:none}.hero-glass-panel{border-radius:26px!important}.project-visual{border-radius:22px}.filters{width:100%;overflow:auto;flex-wrap:nowrap;scrollbar-width:none}.filters::-webkit-scrollbar{display:none}.filter{flex:0 0 auto}}
 @media(prefers-reduced-motion:reduce){.hero-prism-stage .prism-plane,.hero-glass-panel .glass-specular,.hero h1 em::after,.hero-metric-dock i{animation:none!important}}
 
+
+/* ===== DAHLAH7 LIQUID CINEMATIC V4 ===== */
+.hero-liquid-canvas{position:absolute;inset:0;width:100%;height:100%;z-index:0;pointer-events:none;opacity:.82;mix-blend-mode:screen;filter:saturate(1.14) contrast(1.02)}
+.hero::before{z-index:1}.hero-grid,.hero-aura,.hero-glass-blobs,.hero-prism-stage,.hero-orbital-system,.hero-orbit-ring,.hero-coordinate{z-index:2}.hero-copy{z-index:8}.hero-portrait{z-index:7}.hero-spatial-cards{z-index:9}.hero-metric-dock,.hero-hud,.hero-index,.hero-command-island{z-index:10}
+.hero-command-island{position:absolute;left:50%;bottom:28px;transform:translateX(-50%);display:flex;align-items:center;gap:12px;padding:9px 12px 9px 14px;border-radius:999px;border:1px solid rgba(255,255,255,.19);background:linear-gradient(145deg,rgba(255,255,255,.09),rgba(255,255,255,.025));-webkit-backdrop-filter:blur(28px) saturate(1.8);backdrop-filter:blur(28px) saturate(1.8);box-shadow:0 20px 60px rgba(0,0,0,.26),inset 0 1px 0 rgba(255,255,255,.38),inset 1px 0 rgba(145,226,255,.05),inset -1px 0 rgba(255,78,42,.1);font-size:6px;letter-spacing:.18em;color:rgba(255,255,255,.48);white-space:nowrap}
+.hero-command-island::before{content:"";position:absolute;left:8%;right:18%;top:0;height:1px;background:linear-gradient(90deg,transparent,rgba(255,255,255,.88),rgba(151,226,255,.32),transparent);opacity:.7}
+.hero-command-island .command-live{display:flex;align-items:center;gap:7px;color:rgba(255,255,255,.78)}.hero-command-island .command-live i{width:5px;height:5px;border-radius:50%;background:#ff5a35;box-shadow:0 0 14px rgba(255,83,45,.95);animation:commandPulse 2.1s ease-in-out infinite}.hero-command-island .command-sep{width:1px;height:13px;background:rgba(255,255,255,.12)}.hero-command-island b{display:grid;place-items:center;width:28px;height:28px;border-radius:50%;color:#fff;font-size:8px;background:radial-gradient(circle at 32% 24%,rgba(255,255,255,.28),rgba(255,84,45,.12) 34%,rgba(255,255,255,.035) 72%);border:1px solid rgba(255,255,255,.18);box-shadow:inset 0 1px rgba(255,255,255,.32),0 0 22px rgba(255,71,40,.12)}
+@keyframes commandPulse{50%{opacity:.4;transform:scale(.78)}}
+.topbar,.hero-glass-panel,.hero-command-island,.chapter-rail,.filters,.button,.filter,.nav-cta,.project-open{isolation:isolate}
+.topbar::after,.hero-command-island::after{content:"";position:absolute;inset:1px;border-radius:inherit;pointer-events:none;background:linear-gradient(112deg,rgba(150,225,255,.045),transparent 25% 70%,rgba(255,83,48,.055));mix-blend-mode:screen}
+.button,.nav-cta,.project-open{box-shadow:inset 0 1px 0 rgba(255,255,255,.24),0 10px 28px rgba(0,0,0,.14)}
+.button:hover,.nav-cta:hover,.project-open:hover{box-shadow:inset 0 1px 0 rgba(255,255,255,.38),0 18px 42px rgba(0,0,0,.23),0 0 0 1px rgba(255,255,255,.05);transform:translateY(-2px)}
+.section-dark:not(.hero)::after{content:"";position:absolute;left:var(--pad);right:var(--pad);top:0;height:1px;background:linear-gradient(90deg,transparent,rgba(255,255,255,.09) 18%,rgba(255,78,43,.12) 50%,rgba(255,255,255,.08) 82%,transparent);pointer-events:none}
+.project-visual{box-shadow:inset 0 1px 0 rgba(255,255,255,.08),0 26px 70px rgba(0,0,0,.24)}
+.project-card:hover .project-visual{box-shadow:inset 0 1px 0 rgba(255,255,255,.13),0 44px 120px rgba(0,0,0,.42),0 0 0 1px rgba(255,91,48,.05)}
+@media(max-width:900px){.hero-command-island{display:none}.hero-liquid-canvas{opacity:.58}}
+@media(prefers-reduced-motion:reduce){.hero-liquid-canvas{opacity:.45}.hero-command-island .command-live i{animation:none}}
+
 </style>
 </head>
 <body class="is-loading">
@@ -633,6 +651,7 @@ body.project-hover .cursor-dot{opacity:0}
 
   <main id="top">
     <section class="hero section-dark" aria-labelledby="heroTitle">
+      <canvas class="hero-liquid-canvas" id="liquidScene" aria-hidden="true"></canvas>
       <div class="hero-grid" aria-hidden="true"></div>
       <div class="hero-aura aura-a" aria-hidden="true"></div>
       <div class="hero-aura aura-b" aria-hidden="true"></div>
@@ -685,6 +704,12 @@ body.project-hover .cursor-dot{opacity:0}
       </figure>
 
       <a class="scroll-cue" href="#intro">SCROLL TO DISCOVER <span>↓</span></a>
+      <div class="hero-command-island liquid-glass" aria-hidden="true">
+        <span class="command-live"><i></i> LIVE PORTFOLIO</span>
+        <span class="command-sep"></span>
+        <span>AI</span><span>WEB</span><span>3D</span>
+        <b>D7</b>
+      </div>
       <div class="hero-index" aria-hidden="true"><span>01</span><i></i><span>08</span></div>
       <div class="hero-hud" aria-hidden="true">
         <span>STATUS / AVAILABLE FOR SELECTED WORK</span>
