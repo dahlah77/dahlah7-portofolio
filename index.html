@@ -605,6 +605,30 @@ body.project-hover .cursor-dot{opacity:0}
 @media(max-width:720px){.hero-optical-frame{display:none}.hero-copy,.hero-portrait{transform:none!important;opacity:1!important}.hero-liquid-canvas{transform:none!important}.portrait-shell{border-radius:26px!important}.portrait-shell img,.portrait-wash{border-radius:25px}.filters{border-radius:24px;width:100%;overflow-x:auto;flex-wrap:nowrap;scrollbar-width:none}.filters::-webkit-scrollbar{display:none}.filter{white-space:nowrap}.project-visual{border-radius:22px!important}.project-visual::after{border-radius:16px!important}.section-index{left:22px!important}}
 @media(prefers-reduced-motion:reduce){.hero-copy,.hero-portrait,.hero-liquid-canvas,.hero-orbital-system,.hero-prism-stage,.hero-spatial-cards{transform:none!important;scale:1!important;opacity:1!important}}
 
+
+/* ===== USER CLEANUP: NORMAL CURSOR + CLEAN START PROJECT CTA ===== */
+.cursor-dot{display:none!important}
+.cursor-ready a,.cursor-ready button,a,button{cursor:auto}
+.nav-cta{
+  position:relative!important;display:inline-flex!important;align-items:center!important;gap:9px!important;
+  padding:9px 0!important;margin-left:auto!important;border:0!important;border-radius:0!important;
+  background:transparent!important;-webkit-backdrop-filter:none!important;backdrop-filter:none!important;
+  box-shadow:none!important;color:rgba(255,255,255,.78)!important;transform:none!important;overflow:visible!important;
+}
+.nav-cta::before,.nav-cta::after{display:none!important;content:none!important}
+.nav-cta span{
+  display:inline-block!important;min-width:0!important;width:auto!important;height:auto!important;padding:0!important;
+  border:0!important;border-radius:0!important;background:transparent!important;box-shadow:none!important;
+  transform:none!important;color:rgba(255,255,255,.74)!important;
+}
+.nav-cta:hover{
+  background:transparent!important;border:0!important;box-shadow:none!important;transform:none!important;color:#fff!important;
+}
+.nav-cta:hover span{transform:translateX(4px)!important;background:transparent!important;border:0!important}
+.nav-cta{background-image:linear-gradient(90deg,rgba(255,83,45,.92),rgba(255,138,74,.62))!important;background-repeat:no-repeat!important;background-position:0 100%!important;background-size:0 1px!important;transition:color .3s,background-size .38s var(--ease-premium)!important}
+.nav-cta:hover{background-size:100% 1px!important}
+@media(max-width:720px){.nav-cta{display:none!important}}
+
 </style>
 </head>
 <body class="is-loading">
@@ -627,7 +651,6 @@ body.project-hover .cursor-dot{opacity:0}
     <a href="#about" data-section="about"><span>07</span><i></i><b>About</b></a>
     <a href="#contact" data-section="contact"><span>08</span><i></i><b>Contact</b></a>
   </div>
-  <div class="cursor-dot" id="cursorDot" aria-hidden="true"></div>
   <div class="project-cursor" id="projectCursor" aria-hidden="true"><span>OPEN</span><b>↗</b></div>
   <div class="red-flow-bg" aria-hidden="true">
     <span class="flow flow-a"></span>
